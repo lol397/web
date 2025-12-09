@@ -1,51 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yididya Matios | Coding Portfolio</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background:#0f172a; color:#fff; padding:20px; }
+
+    header { text-align:center; margin-bottom:30px; }
+    header h1 { font-size:30px; }
+    header p { color:#94a3b8; }
+
+    .container { max-width:900px; margin:auto; }
+
+    section { background:#020617; padding:20px; border-radius:12px; margin-bottom:20px; }
+
+    h2 { margin-bottom:15px; border-bottom:2px solid #2563eb; display:inline-block; }
+
+    /* Skills Bars */
+    .skill { margin-bottom:15px; }
+    .skill-name { display:flex; justify-content:space-between; font-size:14px; color:#cbd5f5; }
+    .bar { height:12px; background:#1e293b; border-radius:10px; overflow:hidden; }
+    .bar span { display:block; height:100%; background:#3b82f6; width:0%; transition:2s; }
+
+    /* Tech Cards */
+    .tech-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; }
+    .tech { background:#020617; padding:12px; border-radius:10px; text-align:center; font-size:14px; }
+
+    /* Code block */
+    pre {
+      background:#020617;
+      padding:15px;
+      border-radius:12px;
+      overflow-x:auto;
+      font-size:14px;
+      color:#e2e8f0;
+    }
+
+    footer {
+      text-align:center;
+      margin-top:20px;
+      color:#94a3b8;
+      font-size:14px;
+    }
   </style>
 </head>
 <body>
 
-  Samuel Green
-  Available to Walk
+<div class="container">
+  <header>
+    <h1>Yididya Matios</h1>
+    <p>Aspiring Software Developer | Coding Portfolio</p>
+  </header>
 
-  That sounds great. I’d be happy with that.
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm Yididya Matios, a student who loves coding and building websites and apps.  
+      I enjoy solving problems using code and learning new programming languages.
+    </p>
+  </section>
 
-  Could you send over some pictures of your dog, please?
+  <!-- Coding Skills -->
+  <section>
+    <h2>Coding Skills</h2>
 
-  Here are a few pictures. She’s a happy girl!
+    <div class="skill">
+      <div class="skill-name"><span>HTML</span><span>90%</span></div>
+      <div class="bar"><span style="width:90%"></span></div>
+    </div>
 
-  Can you make it?
+    <div class="skill">
+      <div class="skill-name"><span>CSS</span><span>85%</span></div>
+      <div class="bar"><span style="width:85%"></span></div>
+    </div>
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+    <div class="skill">
+      <div class="skill-name"><span>JavaScript</span><span>75%</span></div>
+      <div class="bar"><span style="width:75%"></span></div>
+    </div>
 
-  30 minute walk
-  $29
+    <div class="skill">
+      <div class="skill-name"><span>Python</span><span>65%</span></div>
+      <div class="bar"><span style="width:65%"></span></div>
+    </div>
+  </section>
 
-  1 hour walk
-  $49
+  <!-- Tools & Languages -->
+  <section>
+    <h2>Languages & Tools</h2>
+    <div class="tech-grid">
+      <div class="tech">HTML5</div>
+      <div class="tech">CSS3</div>
+      <div class="tech">JavaScript</div>
+      <div class="tech">Python</div>
+      <div class="tech">Git & GitHub</div>
+      <div class="tech">VS Code</div>
+    </div>
+  </section>
 
-  Type a message…
+  <!-- Sample Code -->
+  <section>
+    <h2>Sample Code</h2>
+    <p>Example JavaScript function:</p>
+    <pre>
+function greetUser(name) {
+  if (!name) {
+    return "Hello, Guest!";
+  }
+  return "Hello, " + name + "!";
+}
 
-  Simple booking
+console.log(greetUser("Yididya"));
+    </pre>
+  </section>
 
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <p>✅ Personal Portfolio Website</p>
+    <p>✅ JavaScript Calculator</p>
+    <p>✅ To-Do List App</p>
+    <p>✅ School Group Project Website</p>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <p>Email: yididya@example.com</p>
+    <p>GitHub: github.com/yididya</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Yididya Matios</p>
+  </footer>
+</div>
+
 </body>
 </html>
